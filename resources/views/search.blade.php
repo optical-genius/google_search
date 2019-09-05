@@ -59,7 +59,9 @@
 
     </div>
 
+@if($images->isEmpty())
 
+@else
     <div class="container">
         <h4>Картинки которые вы искали по запросу: {{$user_request->user_request}}</h4>
         <div class="grid">
@@ -69,7 +71,7 @@
             @endforeach
         </div>
     </div>
-
+@endif
 
     <script>
         // init Masonry
